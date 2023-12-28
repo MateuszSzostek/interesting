@@ -1,0 +1,54 @@
+{
+  "name": "interesting",
+  "version": "1.0.0",
+  "private": true,
+  "description": "interesting",
+  "author": "MateuszSzostek",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@parcel/namer-default": "^2.10.3",
+    "babel-plugin-styled-components": "^2.1.4",
+    "esm": "^3.2.25",
+    "gatsby": "^5.13.1",
+    "gatsby-awesome-pagination": "^0.3.8",
+    "gatsby-image": "^3.11.0",
+    "gatsby-plugin-google-analytics": "^5.13.0",
+    "gatsby-plugin-google-gtag": "^5.13.0",
+    "gatsby-plugin-image": "^3.13.0",
+    "gatsby-plugin-manifest": "^5.13.0",
+    "gatsby-plugin-offline": "^6.13.0",
+    "gatsby-plugin-react-helmet": "^6.13.0",
+    "gatsby-plugin-react-svg": "^3.3.0",
+    "gatsby-plugin-sharp": "^5.13.0",
+    "gatsby-plugin-sitemap": "^6.13.0",
+    "gatsby-plugin-styled-components": "^6.13.0",
+    "gatsby-source-filesystem": "^5.13.0",
+    "gatsby-transformer-remark": "^6.13.0",
+    "gatsby-transformer-sharp": "^5.13.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^6.1.6",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/react-helmet": "^6.1.11",
+    "@types/styled-components": "^5.1.34",
+    "@types/uuid": "^9.0.7",
+    "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.32",
+    "typescript": "^5.3.3"
+  }
+}
