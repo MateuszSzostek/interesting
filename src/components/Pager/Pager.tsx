@@ -4,6 +4,8 @@ import { StyledPager } from "./styles";
 import { IPager } from "./types";
 import Module from "../Module/Module";
 import PageContainer from "../PageContainer/PageContainer";
+import { Link } from "gatsby";
+import "./Pager.styles.css";
 
 const Pager = ({ pagerData }: IPager) => {
   const [previousPages, setPreviousPages] = useState<any[]>([]);
@@ -51,25 +53,25 @@ const Pager = ({ pagerData }: IPager) => {
         <StyledPager>
           <div className="pager__button-container">
             {previousPagePath !== "" && (
-              <Button to={previousPagePath} variant="outlined">
+              <Link to={previousPagePath} className="pagination-btn">
                 PREVIOUS
-              </Button>
+              </Link>
             )}
             {previousPages.map((btn, idx) => (
-              <Button key={idx} to={btn.slug}>
+              <Link key={idx} to={btn.slug} className="pagination-btn__number">
                 {btn.pageNumber}
-              </Button>
+              </Link>
             ))}
             <span className="pager__page-active">{humanPageNumber}</span>
             {nextPages.map((btn, idx) => (
-              <Button key={idx} to={btn.slug}>
+              <Link key={idx} to={btn.slug} className="pagination-btn__number">
                 {btn.pageNumber}
-              </Button>
+              </Link>
             ))}
             {nextPagePath !== "" && (
-              <Button to={nextPagePath} variant="outlined">
+              <Link to={nextPagePath} className="pagination-btn">
                 NEXT
-              </Button>
+              </Link>
             )}
           </div>
         </StyledPager>

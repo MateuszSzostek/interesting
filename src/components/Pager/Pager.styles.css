@@ -1,0 +1,22 @@
+.pagination-btn {
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+}
+
+.pager__page-active {
+  color: darkgoldenrod;
+}
+
+.pagination-btn,
+.pagination-btn__number,
+.pager__page-active {
+  transition: 0.2s;
+  padding: 4px 6px;
+  margin: 2px;
+}
+
+.pagination-btn:hover,
+.pagination-btn__number:hover {
+  background-color: darkgoldenrod;
+  color: black;
+}

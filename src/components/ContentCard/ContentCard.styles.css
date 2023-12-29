@@ -5,6 +5,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.2s;
+}
+
+.card-btn:hover {
+  cursor: pointer;
+  background-color: darkgoldenrod;
+  color: black !important;
 }
 
 .content-card__brand-border {

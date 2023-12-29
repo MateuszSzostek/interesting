@@ -49,7 +49,7 @@ export const ContentCardWrapper = styled.article<IContentCardWrapper>`
   ${({ category }) => variantStyles(category)}
 
   box-sizing: border-box;
-  background-color: ${Colors._gray10};
+  background-color: ${Colors._gray09};
   padding: 5px;
   width: 550px;
   margin-top: 30px;
@@ -61,10 +61,19 @@ export const ContentCardWrapper = styled.article<IContentCardWrapper>`
     text-align: center;
   }
 
+  p,
+  h3 {
+    text-align: center;
+  }
+
   p:nth-child(5) {
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: ${FontSizes._px15};
     margin-bottom: 7px;
+  }
+
+  p {
+    font-weight: 700;
   }
 
   .content-card__buttons-wrapper {

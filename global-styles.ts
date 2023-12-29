@@ -29,6 +29,7 @@ type Categories =
 enum Colors {
   _gray00 = "#ffffff",
   _gray05 = "#999999",
+  _gray09 = "#111111",
   _gray10 = "#000000",
   _blue01 = "#0099ff",
   _blue02 = "#0011E0",
